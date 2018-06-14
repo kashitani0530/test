@@ -18,6 +18,7 @@ main{
 }
 
 main h1{
+	width:800px;
     margin-top:80px;
     color:black;
     border-left:5px solid black;
