@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+<category name="カテゴリーなし">
+<launchConfiguration bookmark="false" name="Android"/>
+<launchConfiguration bookmark="false" name="Capsule"/>
+<launchConfiguration bookmark="false" name="CheakLoadDBC"/>
+<launchConfiguration bookmark="false" name="ChkLoadJdbc"/>
+<launchConfiguration bookmark="false" name="ClassSample"/>
+<launchConfiguration bookmark="false" name="HelloJSP (1)"/>
+<launchConfiguration bookmark="false" name="HelloSurvlet (1)"/>
+<launchConfiguration bookmark="false" name="HelloSurvlet (2)"/>
+<launchConfiguration bookmark="false" name="HelloWolrd"/>
+<launchConfiguration bookmark="false" name="HelloWorld"/>
+<launchConfiguration bookmark="false" name="HelloWorld (1)"/>
+<launchConfiguration bookmark="false" name="HelloWorld (2)"/>
+<launchConfiguration bookmark="false" name="Human"/>
+<launchConfiguration bookmark="false" name="Iphone"/>
+<launchConfiguration bookmark="false" name="Main"/>
+<launchConfiguration bookmark="false" name="PiggyBank"/>
+<launchConfiguration bookmark="false" name="Teat"/>
+<launchConfiguration bookmark="false" name="Test"/>
+<launchConfiguration bookmark="false" name="Test (1)"/>
+<launchConfiguration bookmark="false" name="Test (2)"/>
+<launchConfiguration bookmark="false" name="ログイン"/>
+<launchConfiguration bookmark="false" name="ローカル・ホスト での Tomcat8 (Java8)"/>
+<launchConfiguration bookmark="false" name="ローカル・ホスト での Tomcat8 (Java8) (3)"/>
+<launchConfiguration bookmark="false" name="ローカル・ホスト での Tomcat8 (Java8) (4)"/>
+<launchConfiguration bookmark="false" name="ローカル・ホスト の Tomcat8 (Java8)"/>
+</category>
+</runner>
