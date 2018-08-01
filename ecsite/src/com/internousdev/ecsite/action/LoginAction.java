@@ -13,15 +13,14 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport implements SessionAware{
 	private String loginUserId;
 	private String loginPassword;
-	private Map<String,Object> session;
+	public Map<String,Object>session;
 	private LoginDAO loginDAO = new LoginDAO();
 	private LoginDTO loginDTO = new LoginDTO();
-	private BuyItemDAO buyItemDAO = new BuyItemDAO();
-
+	private BuyItemDAO buyItemDAO =new BuyItemDAO();
 	public String execute(){
 		String result = ERROR;
-		loginDTO = loginDAO.getLoginUserInfo(loginUserId,loginPassword);
-		session.put("loginUser",loginDTO);
+		loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
+		session.put("loginUser", loginDTO);
 
 		if(((LoginDTO)session.get("loginUser")).getLoginFlg()){
 			result = SUCCESS;
@@ -36,27 +35,21 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		}
 		return result;
 	}
-
 	public String getLoginUserId() {
 		return loginUserId;
 	}
-
 	public void setLoginUserId(String loginUserId) {
 		this.loginUserId = loginUserId;
 	}
-
 	public String getLoginPassword() {
 		return loginPassword;
 	}
-
 	public void setLoginPassword(String loginPassword) {
 		this.loginPassword = loginPassword;
 	}
-
 	public Map<String, Object> getSession() {
 		return session;
 	}
-
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
 	}

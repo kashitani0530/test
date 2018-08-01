@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,7 +13,6 @@
 <title>MyPage画面</title>
 
 <style type="text/css">
-
 	body{
 		margin:0;
 		padding:0;
@@ -62,21 +61,21 @@
 </style>
 </head>
 <body>
-	<div id="header">
-		<div id="pr">
-		</div>
+<div id="header">
+	<div id="pr">
 	</div>
-	<div id="main">
-		<div id="top">
-			<p>MyPage</p>
-		</div>
-		<div>
-		<s:if test="myPageList == null">
-			<h3>ご購入情報はありません。</h3>
-		</s:if>
-		<s:elseif test="message == null">
-			<h3>ご購入情報は以下になります。</h3>
-			<table border="1">
+</div>
+<div id="main">
+	<div id="top">
+		<p>MyPage</p>
+	</div>
+	<div>
+	<s:if test="myPageList == null">
+		<h3>ご購入情報はありません。</h3>
+	</s:if>
+	<s:elseif test="message == null">
+		<h3>ご購入情報は以下になります。</h3>
+		<table border="1">
 			<tr>
 				<th>商品名</th>
 				<th>値段</th>
@@ -86,7 +85,7 @@
 			</tr>
 		<s:iterator value="myPageList">
 			<tr>
-				<td><s:property value="itemName"/></td>
+				<td><s:property value="itemName" /></td>
 				<td><s:property value="totalPrice"/><span>円</span></td>
 				<td><s:property value="totalCount"/><span>個</span></td>
 				<td><s:property value="payment"/></td>
@@ -98,19 +97,19 @@
 			<input type="hidden" name="deleteFlg" value="1">
 			<s:submit value="削除" method="delete"/>
 		</s:form>
-		</s:elseif>
-		<s:if test="message != null">
-			<h3><s:property value="message"/></h3>
-		</s:if>
+	</s:elseif>
+	<s:if test="message != null">
+		<h3><s:property value="message"/></h3>
+	</s:if>
 		<div id="text-right">
 			<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 			<p>ログアウトする場合は<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 		</div>
-		</div>
 	</div>
-	<div id="footer">
-		<div id="pr">
-		</div>
+</div>
+<div id="footer">
+	<div id="pr">
 	</div>
+</div>
 </body>
 </html>

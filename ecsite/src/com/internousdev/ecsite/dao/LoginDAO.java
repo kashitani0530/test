@@ -8,17 +8,23 @@ import com.internousdev.ecsite.dto.LoginDTO;
 import com.internousdev.ecsite.util.DBConnector;
 
 public class LoginDAO {
-	 DBConnector dbConnector = new DBConnector();
-	 Connection connection = dbConnector.getConnection();
-	 LoginDTO loginDTO = new LoginDTO();
+	private DBConnector dbConnector = new DBConnector();
+	private Connection connection = dbConnector.getConnection();//Connectionオブジェクトの取得
+	private LoginDTO loginDTO = new LoginDTO();
 
 	public LoginDTO getLoginUserInfo(String loginUserId,String loginPassword){
-
-		String sql = "SELECT * FROM login_user_transaction where login_id = ? AND login_pass = ?";
-
+		String sql = "SELECT * FROM login_user_transaction "
+				+ "where login_id = ? AND login_pass = ?";
+		/*StatementはSQL文をデータベースに送るための入れ物のような役割
+		 * executeQueryメソッドによってデータベースにSQL文を送る
+		 * PreparedStatementはStatementを継承したもの
+		 * 違いはSQL文が渡されるタイミングで、StatementではexecuteQueryメソッドを実行するときにSQL文が渡される。
+		 * PreparedStatementではオブジェクトが生成されるときにSQL文が渡される。
+		 *
+		 * もう１つの違いは、渡されるSQL文
+		 * ？はSQLの文法にはない形で、この部分には、PreparesStatement#setXXXというスタイルのメソッドを使って、データを設定する。*/
 		try{
-			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);//問い合わせの結果の取得するためのステートメント
 			preparedStatement.setString(1, loginUserId);
 			preparedStatement.setString(2, loginPassword);
 

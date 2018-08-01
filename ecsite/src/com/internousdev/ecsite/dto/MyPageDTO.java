@@ -7,49 +7,51 @@ public class MyPageDTO {
 	public String payment;
 	public String userName;
 	public String id;
-	public String insert_date;
+	public String insert_data;
 
-	public String getItemName(){
+	public String getItemName() {
 		return itemName;
 	}
-	public void setItemName(String itemName){
+	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getTotalPrice(){
+	public String getTotalPrice() {
 		return totalPrice;
 	}
-	public void setTotalPrice(String totalPrice){
+	public void setTotalPrice(String totalPrice) {
 		this.totalPrice = totalPrice;
 	}
-	public String getTotalCount(){
+	public String getTotalCount() {
 		return totalCount;
 	}
-	public void setTotalCount(String totalCount){
+	public void setTotalCount(String totalCount) {
 		this.totalCount = totalCount;
 	}
-	public String getPayment(){
+	public String getPayment() {
 		return payment;
 	}
-	public void setPayment(String payment){
+	public void setPayment(String payment) {
 		this.payment = payment;
 	}
-	public String getUserName(){
+	public String getUserName() {
 		return userName;
 	}
-	public void setUserName(String userName){
+	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getId(){
+	public String getId() {
 		return id;
 	}
-	public void setId(String id){
+	public void setId(String id) {
 		this.id = id;
 	}
-	public String getInsert_date(){
-		return insert_date;
+	public String getInsert_data() {
+		return insert_data;
 	}
-	public void setInsert_date(String insert_date){
-		this.insert_date = insert_date;
+	public void setInsert_data(String insert_data) {
+		this.insert_data = insert_data;
 	}
+
+
 
 }

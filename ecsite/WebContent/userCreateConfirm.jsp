@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,9 +11,7 @@
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 <title>UserCreateConfirm画面</title>
-
 <style type="text/css">
-
 	body{
 		margin:0;
 		padding:0;
@@ -58,19 +56,18 @@
 </style>
 </head>
 <body>
-
-	<div id="header">
-		<div id="pr">
-		</div>
+<div id="header">
+	<div id="pr">
 	</div>
-	<div id="main">
-		<div id=" top">
-			<p>UserCreateConfirm</p>
-		</div>
-		<div>
-			<h3>登録する内容は以下でよろしいですか。</h3>
-			<table>
-				<s:form action="UserCreateCompleteAction">
+</div>
+<div id="main">
+	<div id="top">
+		<p>UserCreateConfirm</p>
+	</div>
+	<div>
+		<h3>登録する内容は以下でよろしいですか。</h3>
+		<table>
+			<s:form action ="UserCreateCompleteAction">
 				<tr id="box">
 					<td>
 						<label>ログインID:</label>
@@ -100,14 +97,13 @@
 						<s:submit value="完了"/>
 					</td>
 				</tr>
-				</s:form>
-			</table>
-		</div>
+			</s:form>
+		</table>
 	</div>
-	<div id="footer">
-		<div id="pr">
-		</div>
+</div>
+<div id="footer">
+	<div id="pr">
 	</div>
-
+</div>
 </body>
 </html>
