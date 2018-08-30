@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.util.CommonUtility"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dto.UserInfoDTO"/>
-<fullyQualifiedTypeName name="com.internousdev.sampleweb.util.InputChecker"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dao.DestinationInfoDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dto.DestinationInfoDTO"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dto.CartInfoDTO"/>
@@ -43,21 +42,22 @@
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dao.MyPageDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dto.MyPageDTO"/>
-<fullyQualifiedTypeName name="com.internousdev.sampleweb.dao.UserInfoDAO"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.util.DBConnector"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
-<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dao.PurchaseHistoryInfoDAO"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dto.MCategoryDTO"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dto.PurchaseHistoryInfoDTO"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="com.internousdev.sampleweb.dao.MCategoryDAO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.internousdev.sampleweb.util.InputChecker"/>
+<fullyQualifiedTypeName name="com.internousdev.sampleweb.dao.UserInfoDAO"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>
